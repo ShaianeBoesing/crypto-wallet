@@ -9,6 +9,7 @@
       <th>Description</th>
       <th>Acronym</th>
       <th>Image</th>
+      <th>Mining Type</th>
       <th colspan="2">Actions</th>
     </tr>
   <thead>
@@ -18,6 +19,7 @@
       <td> <%= coin.description %> </td>
       <td> <%= coin.acronym %> </td>
       <td> <%= image_tag coin.url_image , width:25, height:25 if coin.url_image.present?  %> </td>
+      <td> <%= coin.mining_type.description %> </td>
       <td> <%= link_to 'Show', coin_path(coin) %> </td>
       <td> <%= link_to 'Edit', edit_coin_path(coin) %> </td>
       <td> <%= button_to 'Delete', coin, method: :delete, form: { data: { turbo_confirm: 'Are you sure?' } }%> </td>    

@@ -1,2 +1,5 @@
-<h1>Seja Bem Vindo</h1>
-<%= link_to "Cadastro de Moedas", coins_path %>
+<h1>Welcome</h1>
+<p> Idioma: <strong>  <%= locale(I18n.locale) %> </strong> </p>
+<p> Data:   <strong> <%= Date.today %> </strong> </p>
+<p> <%= link_to "Coins Registration", coins_path %></p>
+<p> <%= link_to "Mining Types Registration", mining_types_path %></p>

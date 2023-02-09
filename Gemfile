@@ -45,6 +45,12 @@ gem "bootsnap", require: false
 # Open pry with rails console
 gem "pry-rails"
 
+# TTY-Spinner
+gem "tty-spinner"
+
+# i18n
+gem "rails-i18n"
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
