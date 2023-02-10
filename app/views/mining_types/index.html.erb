@@ -15,9 +15,9 @@
       <tr>
         <td> <%= type.description %> </td>
         <td> <%= type.acronym %> </td>
-        <td> <%= link_to 'Show', mining_types_path(type) %> </td>
-        <td> <%= link_to 'Edit', edit_mining_type_path(type) %> </td>
-        <td> <%= button_to 'Delete', type, method: :delete, form: { data: { turbo_confirm: 'Are you sure?' } }%> </td>    
+        <td> <%= link_to t('links.show'), mining_type_path(type) %> </td>
+        <td> <%= link_to t('links.edit'), edit_mining_type_path(type) %> </td>
+        <td> <%= button_to t('links.delete'), type, method: :delete, form: { data: { turbo_confirm: t('alert.are_you_sure') } }%> </td>    
       </tr>
     <% end %>
     </tbody>

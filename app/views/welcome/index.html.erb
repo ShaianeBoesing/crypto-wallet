@@ -1,5 +1,5 @@
-<h1>Welcome</h1>
-<p> Idioma: <strong>  <%= locale(I18n.locale) %> </strong> </p>
-<p> Data:   <strong> <%= Date.today %> </strong> </p>
+<h1><%= t(:hello) %></h1>
+<p> Idioma: <strong>  <%= locale %> </strong> </p>
+<p> Data:   <strong> <%= I18n.l(Date.today) %> </strong> </p>
 <p> <%= link_to "Coins Registration", coins_path %></p>
 <p> <%= link_to "Mining Types Registration", mining_types_path %></p>

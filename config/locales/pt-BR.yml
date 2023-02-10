@@ -1,0 +1,8 @@
+pt-BR:
+  hello: "Olá Mundo"
+  links:
+    edit: Editar
+    show: Ver
+    delete: Apagar
+  alert:
+    are_you_sure: Tem Certeza?
